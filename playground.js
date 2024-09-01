@@ -87,14 +87,22 @@
 
 //to use top tech method
 
-const catsMap = new Map();
+//const catsMap = new Map();
 
-catsMap.set("c", 1);
-catsMap.set("a", 1);
-catsMap.set("t", 1);
-catsMap.set("s", 1);
+//catsMap.set("c", 1);
+//catsMap.set("a", 1);
+//catsMap.set("t", 1);
+//catsMap.set("s", 1);
 
 
 
-console.log(catsMap);
+//console.log(catsMap);
+
+///Array chunk 
+//const arr = [0, 1, 2, 3, 4]
+//const size = 2,
+
+//for ( let i = 0; i < arr.length; i += size){
+//console.log(i);
+//}
 
