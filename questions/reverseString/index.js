@@ -13,20 +13,23 @@
 // a = 'vaD', c = 'i' => a = 'i' + 'vaD' = 'ivaD'
 // a = 'ivaD', c = 'd' => a = 'd' + 'ivaD' = 'divaD'
 
-
-
 //Solution 3 Best practice
 const reverseString = (str) => {
-     
-  
-    }
+    return str
+    .split("")
+    .reduce((accumulator, currentValue) => currentValue + accumulator); ///can make simplier
+  };
 
+//const reverseString = (str) => {
+ // return str.split("").reduce((accumulator, currentValue) => {
+  //  return currentValue + accumulator;
+ // } )              ////, ''); can remove 2nd arguement
+//};
 
 //Solution 2
 //const reverseString = (str) => {
-     
-//return str.split('').reverse().join('');
 
+//return str.split('').reverse().join('');
 
 //const arr = str.split('');
 //const reversedArr = arr.reverse();
@@ -38,18 +41,15 @@ const reverseString = (str) => {
 //let reversed = '';
 
 //for (let i = 0; i < str.length; ++i) {
- // reversed = str[i] + reversed;
+// reversed = str[i] + reversed;
 //}
 
 //ES6 loop strings like this now
 //for (let char of str){
- //  reversed =   char + reversed;
+//  reversed =   char + reversed;
 //  }
-  
 
 //return reversed;
 //};
 
 module.exports = reverseString;
-
-
