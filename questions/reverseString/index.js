@@ -15,11 +15,15 @@
 
 
 
-
+//Solution 3 Best practice
+const reverseString = (str) => {
+     
+  
+    }
 
 
 //Solution 2
-const reverseString = (str) => {
+//const reverseString = (str) => {
      
 //return str.split('').reverse().join('');
 
@@ -27,7 +31,7 @@ const reverseString = (str) => {
 //const arr = str.split('');
 //const reversedArr = arr.reverse();
 //return reversedArr.join('');
-}
+//}
 
 //Solution 1
 //const reverseString = (str) => {
