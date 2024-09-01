@@ -13,23 +13,29 @@
 // a = 'vaD', c = 'i' => a = 'i' + 'vaD' = 'ivaD'
 // a = 'ivaD', c = 'd' => a = 'd' + 'ivaD' = 'divaD'
 
+//Solution 1
 const reverseString = (str) => {
-let reversed = '';
+    
 
-for (let i =0; i< str.length; ++1){
-  reversed =   str[i] + reversed;
 }
 
+//Solution 1
+//const reverseString = (str) => {
+//let reversed = '';
+
+//for (let i = 0; i < str.length; ++i) {
+ // reversed = str[i] + reversed;
+//}
+
 //ES6 loop strings like this now
-for (let char of str){
-    reversed =   str[i] + reversed;
-  }
+//for (let char of str){
+ //  reversed =   char + reversed;
+//  }
   
 
-
-};
+//return reversed;
+//};
 
 module.exports = reverseString;
 
 
-//Solution 1
