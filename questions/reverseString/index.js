@@ -13,10 +13,20 @@
 // a = 'vaD', c = 'i' => a = 'i' + 'vaD' = 'ivaD'
 // a = 'ivaD', c = 'd' => a = 'd' + 'ivaD' = 'divaD'
 
-//Solution 1
-const reverseString = (str) => {
-    
 
+
+
+
+
+//Solution 2
+const reverseString = (str) => {
+     
+//return str.split('').reverse().join('');
+
+
+//const arr = str.split('');
+//const reversedArr = arr.reverse();
+//return reversedArr.join('');
 }
 
 //Solution 1
