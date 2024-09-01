@@ -7,8 +7,40 @@
  * capitalize('i love frontend simplified') === 'I Love Frontend Simplified'
  */
 
+//const capitalize = (str) => {
+  //const result = [];
+  //for (let word of str.split(" ")) {
+   // const capitalizedWord = word[0].toUpperCase() + word.slice(1)
+  //  result.push(capitalizedWord)
+ // }
+  //  return result.join(" ");
+//};
+
+
+
+//Brute force method
+//create an empty 'result' string ...with the first letter in string being capitalized
+
+//for each character in the string 
+//if the characte to the left has a space
+//capitalize the character and add it to the result
+//else
+// add it to the result
+
 const capitalize = (str) => {
+    let result = str[0].toUpperCase();
   
-};
+    for (let i = 1; i < str.length; ++i) {
+      if (str[i - 1] === " ") {
+        result += str[i].toUpperCase();
+      }
+      else {
+        result += str[i];
+      }
+    }
+  
+    return result;
+  };
+  
 
 module.exports = capitalize;

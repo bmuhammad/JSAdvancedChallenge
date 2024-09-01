@@ -106,3 +106,13 @@
 //console.log(i);
 //}
 
+
+
+//capitalize
+const str = 'frontend'
+
+const firstLetter = str[0].toUpperCase();
+const restOfString = str.slice(1); // can simplify str.slice(1, str.length);
+console.log(firstLetter, restOfString);
+
+
