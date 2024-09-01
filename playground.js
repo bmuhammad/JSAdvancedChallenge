@@ -28,7 +28,7 @@
 //console.log(sum);
 
 ///character map example
-const str = "Simplified !";
+//const str = "Simplified !";
 //const charMap = {};
 
 //for (let char of str) {
@@ -49,14 +49,14 @@ const str = "Simplified !";
 //}
 
 //even better way for top tech
-const charMap = new Map(); //Data structure to map 1 value to another. Map data structure made to be iterated over. can create a for loop
+//const charMap = new Map(); //Data structure to map 1 value to another. Map data structure made to be iterated over. can create a for loop
 
 //can change let to const bc it is not changing. best practice
-for (let char of str) {
+//for (let char of str) {
     //to get the count of times appearing for a map
-    const count = charMap.get(char)
-    charMap.set(char, count + 1 || 1);
-}
+  //  const count = charMap.get(char)
+   // charMap.set(char, count + 1 || 1);
+//}
 
 //for (let keyAndValue of charMap) {
     //const key = keyAndValue[0];
@@ -67,12 +67,34 @@ for (let char of str) {
 //}
 
 // in one line of code we can get key and value
-for (let [key, count] of charMap) {
-    console.log(key, count);
-}
+//for (let [key, count] of charMap) {
+ //   console.log(key, count);
+//}
 
 //const arr = [1, 2, 3]
 //in es6 i can get key and value faster using. destructiong
 //const [first, second] = arr
 //console.log(first, second) will yield 1 2
 //console.log(charMap);
+
+
+////Anagram
+//const catsMap = {c: 1, a: 1, t: 1, s:1 };
+//to check length of object catsMap. look at the keys
+//console.log(Object.keys(catsMap)) will put keys in an array
+//to check lenght add .length
+//console.log(Object.keys(catsMap).length)
+
+//to use top tech method
+
+const catsMap = new Map();
+
+catsMap.set("c", 1);
+catsMap.set("a", 1);
+catsMap.set("t", 1);
+catsMap.set("s", 1);
+
+
+
+console.log(catsMap);
+
